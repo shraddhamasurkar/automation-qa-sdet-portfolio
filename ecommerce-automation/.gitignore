@@ -1,0 +1,45 @@
+# Build directories
+target/
+bin/
+out/
+
+# IDE files
+.idea/
+.vscode/
+*.iml
+*.iws
+*.ipr
+.DS_Store
+*.classpath
+*.project
+.settings/
+
+# Maven
+*.log
+
+# Test output
+test-output/
+screenshots/
+allure-results/
+
+# Dependency
+dependency-reduced-pom.xml
+
+# Maven wrapper
+.mvn/wrapper/maven-wrapper.jar
+.mvn/wrapper/maven-wrapper.properties
+mvnw
+mvnw.cmd
+
+# OS specific
+Thumbs.db
+.DS_Store
+
+# Java
+*.class
+*.jar
+*.war
+*.ear
+*.zip
+*.tar.gz
+*.rar

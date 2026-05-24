@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-current.dtd">
+<suite name="Amazon Automation Test Suite" parallel="false" verbose="2">
+    
+    <parameter name="browser" value="chrome"/>
+    
+    <!-- Search Product Tests -->
+    <test name="Search Product Tests">
+        <classes>
+            <class name="com.automation_amazon.tests.SearchProductTests">
+                <methods>
+                    <include name="testSearchForLaptops"/>
+                    <include name="testSearchForPhones"/>
+                    <include name="testSearchForBooks"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+    
+    <!-- Add to Cart Tests -->
+    <test name="Add to Cart Tests">
+        <classes>
+            <class name="com.automation_amazon.tests.AddToCartTests">
+                <methods>
+                    <include name="testProductDetailsDisplayed"/>
+                    <include name="testProductInformationDisplayed"/>
+                    <include name="testSearchToProductDetailFlow"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+    
+</suite>
